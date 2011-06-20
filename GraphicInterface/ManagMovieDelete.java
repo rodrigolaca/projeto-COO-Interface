@@ -81,6 +81,8 @@ public class ManagMovieDelete extends JFrame {
 				int recebido = Integer.parseInt(group.getSelection().getActionCommand());
 				ManageMovie manage = new ManageMovie();
 				manage.deleteMovie(recebido);
+				JOptionPane alerta = new JOptionPane();
+				alerta.showMessageDialog(contentPane, "Excluído com Sucesso!");
 				MainGraphUserInterf main = new MainGraphUserInterf();
 				main.setVisible(true);
 				setVisible(false);
